@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="Chart.js-master/">
+
+
+
+<style  type="text/css">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Segoe Print", sans-serif}
+.w3-bar,h1,smalltext {font-family: "Segoe Print", sans-serif}
+
+p.stext{
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+  color: DarkGrey;
+  text-align: center;
+}
+
+p.ttext{
+  font-family: "Comic Sans MS", sans-serif;
+  color: DarkGrey;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Segoe Print", Arial, Helvetica, sans-serif;
+
+}
+
+</style>
+
+
+
+
+<div class="w3-container w3-row-padding  w3-center" style="padding:120px 32px;background-color:#FFE4D6">
+ <canvas id="myChart" width="400" height="200" ></canvas>
+</div>
+
+<div class="w3-container w3-row-padding  w3-center" style="padding:120px 32px;background-color:#FFE4D6"> 
+   
+</div>
+
+
+<div class="w3-container w3-center w3-opacity w3-padding-16" style="background-color:#EFF2EF">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+</div>
+
+
+
+
+
+  <!-- Navbar on small screens -->
+  <div class="w3-col w3-bottom">
+    <div class="w3-large w3-center w3-card" style="background-color:#EFF2EF; width:100%">
+      <a href="tomato.html" class="w3-bar-item w3-button w3-padding-large "style="background-color:#EFF2EF">Home</a>
+      <a href="list.html" id="todolist" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">To-Do List</a>
+      <a href="record.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Record</a>
+      <a href="setting.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Setting</a>
+    </div> 
+  
+    <!-- Navbar-->
+    <div id="navDemo" class="w3-bar-block  w3-hide w3-hide w3-hide-medium w3-large " style="background-color:#EFF2EF">
+      <a href="list.html" class="w3-bar-item w3-button w3-padding-large">To-Do List</a>
+      <a href="record.html" class="w3-bar-item w3-button w3-padding-large">Record</a>
+      <a href="setting.html" class="w3-bar-item w3-button w3-padding-large">Setting</a>
+    </div> 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="setting.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+    var ctx = document.getElementById('myChart');
+    var chart = new Chart(ctx, {
+    type: "bar", // 圖表類型
+    data: {
+    labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat","Sun"], //顯示區間名稱
+    datasets: [
+      {
+        label: "Study Record", // tootip 出現的名稱
+        data: [12, 19, 3, 5, 6, 3,5], // 資料
+        backgroundColor: [
+          "rgba(217, 237, 146, 0.5)", // 第一個 bar 顏色
+          "rgba(153, 217, 140, 0.4)",
+          "rgba(82, 182, 154, 0.5)",
+          "rgba(52, 160, 164, 0.5)",
+          "rgba(26, 117, 159, 0.5)",
+          "rgba(30, 96, 145, 0.5)",
+          "rgba(24, 78, 119, 0.5)"
+        ],
+        borderColor: [
+          "rgba(217, 237, 146, 1)", 
+          "rgba(153, 217, 140, 1)",
+          "rgba(82, 182, 154, 1)",
+          "rgba(52, 160, 164, 1)",
+          "rgba(26, 117, 159, 1)",
+          "rgba(30, 96, 145, 1)",
+          "rgba(24, 78, 119, 1)"
+        ],
+        borderWidth: 1
+      }
+    ]
+  }
+});
+</script>
+</body>
+</html>

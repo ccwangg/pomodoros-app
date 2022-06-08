@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Setting</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+
+
+<style  type="text/css">
+body,h1,h2,h3,h4,h5,h6 {font-family: "Segoe Print", sans-serif}
+.w3-bar,h1,smalltext {font-family: "Segoe Print", sans-serif}
+
+p.stext{
+  font-family: "Comic Sans MS", sans-serif;
+  font-weight: 100;
+  font-size: 72px;
+  color: DarkGrey;
+  text-align: center;
+}
+
+p.ttext{
+  font-family: "Comic Sans MS", sans-serif;
+  color: DarkGrey;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+body{
+  background:#FFE4D6;       
+}
+
+#tomato{
+  border-radius:10px;
+  width: 50px; height: 50px;
+  background-color: #FFE4D6;
+}
+#spring{
+  border-radius:10px;
+  width: 50px; height: 50px;
+  background-color: #FAF3DD;
+}
+ #summer{
+  border-radius:10px;
+  width: 50px; height: 50px;
+  background-color: #EFEBCE;
+}
+#autumn{
+  border-radius:10px;
+  width: 50px; height: 50px;
+  background-color: #BB9457;
+}
+  #winter{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #DDF4F8;
+  }
+  #classic{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #FFFFFF;
+  }
+  .flex_container {
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    margin:auto;
+  }
+
+
+@media(max-width:500px){
+    /*螢幕寬度小於500，套用這個區塊的css*/
+   p.ttext{
+  font-family: "Comic Sans MS", sans-serif;
+  color: DarkGrey;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+   }
+  p.stext{
+    font-family: "Comic Sans MS", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  color: DarkGrey;
+  text-align: center;
+  }
+
+  .right{
+    float: right;
+    width: 50%;
+  }
+  .left{
+    float: left;
+    width: 50%;
+  }
+  
+
+  .btn{
+    width: 20%;
+  } 
+    
+  #tomato{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #FFE4D6;
+  }
+  #spring{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #FAF3DD;
+  }
+  #summer{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #EFEBCE;
+  }
+  #autumn{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #BB9457;
+  }
+  #winter{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #DDF4F8;
+  }
+  #classic{
+    border-radius:10px;
+    width: 50px; height: 50px;
+    background-color: #FFFFFF;
+  }
+  .flex_container {
+    
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    margin:auto;
+    
+  }
+
+}
+
+</style>
+<body>
+  <div class="flex_container">
+  
+      <button id="classic"></button>
+      <p>Original</p>
+      <button id="spring" ></button>
+      <p>Spring</p>
+      <button id="summer" ></button>
+      <p>Summer</p> 
+  </div>
+  <div class="flex_container">
+      <button id="autumn" ></button>
+      <p>Autumn</p>
+      <button id="winter" ></button>
+      <p>Winter</p>
+      <button id="tomato" ></button>
+      <p>Tomato</p>
+  </div>
+ 
+
+
+
+
+<!-- Navbar on small screens -->
+<div id="column" class="w3-col w3-bottom ">
+  <div class="w3-large w3-center w3-card column" style="background-color:#EFF2EF; width:100%">
+    <a href="tomato.html" class="w3-bar-item w3-button w3-padding-large "style="background-color:#EFF2EF">Home</a>
+    <a href="list.html" id="todolist" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">To-Do List</a>
+    <a href="record.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Record</a>
+    <a href="setting.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Setting</a>
+  </div> 
+
+  <!-- Navbar
+  <div id="navDemo" class="w3-bar-block  w3-hide w3-hide w3-hide-medium w3-large " style="background-color:#EFF2EF">
+    <a href="list.html" class="w3-bar-item w3-button w3-padding-large">To-Do List</a>
+    <a href="record.html" class="w3-bar-item w3-button w3-padding-large">Record</a>
+    <a href="setting.html" class="w3-bar-item w3-button w3-padding-large">Setting</a>
+  </div> -->
+
+  <script src="setting.js"></script>
+
+<script>
+var classic = document.getElementById("classic");
+var spring = document.getElementById("spring");
+var summer = document.getElementById("summer");
+var winter = document.getElementById("winter");
+var tomato = document.getElementById("tomato");
+
+
+classic.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#FFFFFF';
+    document.column.style.backgroundColor = '#000000';
+  });
+
+
+  spring.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#FAF3DD';
+    document.column.style.backgroundColor = '#FFA69E';
+  });
+  
+  
+  summer.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#EFEBCE';
+    document.column.style.backgroundColor = '#A3A380';
+  });
+
+  autumn.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#BB9457';
+    document.column.style.backgroundColor = '#997B66';
+    
+  });
+  
+  winter.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#DDF4F8 ';
+    document.column.style.backgroundColor = '#03044D';
+   
+
+  });
+  tomato.addEventListener('click', function () {
+    document.body.style.backgroundColor = '#FFE4D6';
+    document.column.style.backgroundColor = '#EFF2EF';
+
+  });
+  
+  
+  
+  
+  </script>
+  
+  
+
+</body>
+</html>

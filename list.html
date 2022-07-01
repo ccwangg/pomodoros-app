@@ -76,7 +76,41 @@ label {
 	vertical-align: middle;
   display: inline-block;
 }
+@media(max-width:500px){
+   
+   /*螢幕寬度小於500，套用這個區塊的css*/
+   .column{
+     display:grid;
+     grid-template-columns: auto auto auto auto;
 
+   }
+  p.ttext{
+ font-family: "Comic Sans MS", sans-serif;
+ color: DarkGrey;
+ font-size: 10px;
+ text-align: center;
+ font-weight: bold;
+  }
+ p.stext{
+ font-family: "Comic Sans MS", sans-serif;
+ font-weight: 100px;
+ font-size: 50px;
+ color: DarkGrey;
+ text-align: center;
+ }
+
+ .btn{
+   width: 20%;
+ } 
+ .flex{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:auto;
+ height:auto;
+ background-color:#eee;
+}
+}
 
 
 
@@ -100,8 +134,8 @@ label {
         <input style=" display: inline-block;" class="todo__check" type="checkbox">
       </label>
       <p style="height: 10px; display: inline-block;">Hello</p>
-      <a href="tomato.html"><img src="/picture/clock.png"   class="btn-timer" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clock.png'" style="width:3%" ></a>
-      <img src="/picture/clear.png" style="width:3%" class="btn-delete" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clear.png'" >
+      <a href="index.html"><img src="/picture/clock.png"   class="btn-timer" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clock.png'" style="width:5%" ></a>
+      <img src="/picture/clear.png" style="width:5%" class="btn-delete" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clear.png'" >
     </li>
 
     <li class="todo" >
@@ -109,8 +143,8 @@ label {
       <input class="todo__check" type="checkbox"> 
       </label>
       <p style="height: 10px; display: inline-block;">Write down your new To-Do</p>
-      <a  href="tomato.html"><img src="/picture/clock.png" class="btn-timer" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clock.png'" style="width:3%" ></a>
-        <img src="/picture/clear.png" style="width:3%" class="btn-delete" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clear.png'" >
+      <a  href="index.html"><img src="/picture/clock.png" class="btn-timer" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clock.png'" style="width:5%" ></a>
+        <img src="/picture/clear.png" style="width:5%" class="btn-delete" onmouseover="this.src='/picture/hover.png'" onmouseout="this.src='/picture/clear.png'" >
       
     </li>
   </ul>
@@ -118,21 +152,16 @@ label {
 
 
 
-<!-- Navbar on small screens -->
+
 <div class="w3-col w3-bottom">
-  <div class="w3-large w3-center w3-card" style="background-color:#EFF2EF; width:100%">
-    <a href="tomato.html" class="w3-bar-item w3-button w3-padding-large "style="background-color:#EFF2EF">Home</a>
+  <div class="w3-large w3-center w3-card column" style="background-color:#EFF2EF; width:100%">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large "style="background-color:#EFF2EF">Home</a>
     <a href="list.html" id="todolist" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">To-Do List</a>
     <a href="record.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Record</a>
     <a href="setting.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Setting</a>
   </div> 
 
-  <!-- Navbar-->
-  <div id="navDemo" class="w3-bar-block  w3-hide w3-hide w3-hide-medium w3-large " style="background-color:#EFF2EF">
-    <a href="list.html" class="w3-bar-item w3-button w3-padding-large">To-Do List</a>
-    <a href="record.html" class="w3-bar-item w3-button w3-padding-large">Record</a>
-    <a href="setting.html" class="w3-bar-item w3-button w3-padding-large">Setting</a>
-  </div> 
+ 
 
 
 </body>

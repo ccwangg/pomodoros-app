@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
-
+  
 
 <style  type="text/css">
 body,h1,h2,h3,h4,h5,h6 {font-family: "Segoe Print", sans-serif}
@@ -32,207 +32,184 @@ body{
   background:#FFE4D6;       
 }
 
+
 #tomato{
-  border-radius:10px;
-  width: 50px; height: 50px;
-  background-color: #FFE4D6;
-}
-#spring{
-  border-radius:10px;
-  width: 50px; height: 50px;
-  background-color: #FAF3DD;
-}
- #summer{
-  border-radius:10px;
-  width: 50px; height: 50px;
-  background-color: #EFEBCE;
-}
-#autumn{
-  border-radius:10px;
-  width: 50px; height: 50px;
-  background-color: #BB9457;
-}
-  #winter{
     border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #DDF4F8;
-  }
-  #classic{
-    border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #FFFFFF;
-  }
-  .flex_container {
-    display:flex;
-    justify-content:center;
-    justify-content:space-around;
-    margin:auto;
-  }
 
-
-@media(max-width:500px){
-    /*螢幕寬度小於500，套用這個區塊的css*/
-   p.ttext{
-  font-family: "Comic Sans MS", sans-serif;
-  color: DarkGrey;
-  font-size: 10px;
-  text-align: center;
-  font-weight: bold;
-   }
-  p.stext{
-    font-family: "Comic Sans MS", sans-serif;
-  font-weight: 100;
-  font-size: 36px;
-  color: DarkGrey;
-  text-align: center;
-  }
-
-  .right{
-    float: right;
-    width: 50%;
-  }
-  .left{
-    float: left;
-    width: 50%;
-  }
-  
-
-  .btn{
-    width: 20%;
-  } 
-    
-  #tomato{
-    border-radius:10px;
-    width: 50px; height: 50px;
     background-color: #FFE4D6;
   }
   #spring{
     border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #FAF3DD;
+
+    background-color: #d0eacabc;
+    
   }
   #summer{
     border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #EFEBCE;
+
+    background-color: #fbf7c8;
   }
   #autumn{
     border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #BB9457;
+
+    background-color: #e0c08bb5;
   }
   #winter{
     border-radius:10px;
-    width: 50px; height: 50px;
-    background-color: #DDF4F8;
+    
+    background-color: #CDCFDC;
   }
   #classic{
     border-radius:10px;
-    width: 50px; height: 50px;
+
     background-color: #FFFFFF;
+   
   }
-  .flex_container {
+  .grid_container {
     
-    display:flex;
-    justify-content:center;
-    justify-content:space-around;
-    margin:auto;
-    
+    align-items: center;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    font-size: 15px;
+    gap: 30px;
+  justify-content: center;
+  padding:200px 32px;
+  
+  
+ 
+  }
+  .flex{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:auto;
+ height:auto;
+
+}
+.column{
+    background-color: #EFF2EF;
   }
 
+  @media(max-width:500px){
+   
+   /*螢幕寬度小於500，套用這個區塊的css*/
+   .column{
+     display:grid;
+     grid-template-columns: auto auto auto auto;
+
+   }
+ 
+  p.ttext{
+ font-family: "Comic Sans MS", sans-serif;
+ color: DarkGrey;
+ font-size: 10px;
+ text-align: center;
+ font-weight: bold;
+  }
+ p.stext{
+ font-family: "Comic Sans MS", sans-serif;
+ font-weight: 100px;
+ font-size: 50px;
+ color: DarkGrey;
+ text-align: center;
+ }
+
+ .btn{
+   width: 20%;
+ } 
+ .flex{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ width:auto;
+ height:auto;
+
+}
+   
+  #tomato{
+    border-radius:10px;
+ 
+    background-color: #FFE4D6;
+  }
+  #spring{
+    border-radius:10px;
+
+    background-color: #d0eacabc;
+    
+  }
+  #summer{
+    border-radius:10px;
+
+    background-color: #fbf7c8;
+  }
+  #autumn{
+    border-radius:10px;
+
+    background-color: #e0c08bb5;
+  }
+  #winter{
+    border-radius:10px;
+   
+    background-color: #CDCFDC;
+  }
+  #classic{
+    border-radius:10px;
+
+    background-color: #FFFFFF;
+   
+  }
+  .grid_container {
+
+    
+    align-items: center;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    font-size: 15px;
+    gap: 10px;
+  justify-content: center;
+  padding:200px 32px;
+  
+  
+  }
+  .column{
+    background-color: #EFF2EF;
+  }
+  body{
+    background-color: #FFE4D6;
+  }
 }
 
 </style>
-<body>
-  <div class="flex_container">
+<body >
   
-      <button id="classic"></button>
-      <p>Original</p>
-      <button id="spring" ></button>
-      <p>Spring</p>
-      <button id="summer" ></button>
-      <p>Summer</p> 
-  </div>
-  <div class="flex_container">
-      <button id="autumn" ></button>
-      <p>Autumn</p>
-      <button id="winter" ></button>
-      <p>Winter</p>
-      <button id="tomato" ></button>
-      <p>Tomato</p>
+  <div class="grid_container w3-center">
+  
+      <button id="classic">Classic</button>
+      
+      <button id="spring" >Spring</button>
+      
+      <button id="summer" >Summer</button>
+      
+      <button id="autumn" >Autumn</button>
+      
+      <button id="winter" >Winter</button>
+      
+      <button id="tomato" >Tomato</button>
+  
   </div>
  
 
-
-
-
-<!-- Navbar on small screens -->
-<div id="column" class="w3-col w3-bottom ">
-  <div class="w3-large w3-center w3-card column" style="background-color:#EFF2EF; width:100%">
-    <a href="tomato.html" class="w3-bar-item w3-button w3-padding-large "style="background-color:#EFF2EF">Home</a>
+<div  class="w3-col w3-bottom ">
+  
+    <div id="footer" class="w3-large w3-center w3-card column" width:100%">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large ">Home</a>
     <a href="list.html" id="todolist" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">To-Do List</a>
     <a href="record.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Record</a>
-    <a href="setting.html" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Setting</a>
+    <a href="setting.html" id="setting" class="w3-bar-item w3-button  w3-padding-large w3-hover-white ">Setting</a>
   </div> 
 
-  <!-- Navbar
-  <div id="navDemo" class="w3-bar-block  w3-hide w3-hide w3-hide-medium w3-large " style="background-color:#EFF2EF">
-    <a href="list.html" class="w3-bar-item w3-button w3-padding-large">To-Do List</a>
-    <a href="record.html" class="w3-bar-item w3-button w3-padding-large">Record</a>
-    <a href="setting.html" class="w3-bar-item w3-button w3-padding-large">Setting</a>
-  </div> -->
+  
 
   <script src="setting.js"></script>
-
-<script>
-var classic = document.getElementById("classic");
-var spring = document.getElementById("spring");
-var summer = document.getElementById("summer");
-var winter = document.getElementById("winter");
-var tomato = document.getElementById("tomato");
-
-
-classic.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#FFFFFF';
-    document.column.style.backgroundColor = '#000000';
-  });
-
-
-  spring.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#FAF3DD';
-    document.column.style.backgroundColor = '#FFA69E';
-  });
-  
-  
-  summer.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#EFEBCE';
-    document.column.style.backgroundColor = '#A3A380';
-  });
-
-  autumn.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#BB9457';
-    document.column.style.backgroundColor = '#997B66';
-    
-  });
-  
-  winter.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#DDF4F8 ';
-    document.column.style.backgroundColor = '#03044D';
-   
-
-  });
-  tomato.addEventListener('click', function () {
-    document.body.style.backgroundColor = '#FFE4D6';
-    document.column.style.backgroundColor = '#EFF2EF';
-
-  });
-  
-  
-  
-  
-  </script>
-  
-  
-
-</body>
-</html>
